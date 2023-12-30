@@ -4,8 +4,8 @@ local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/Regul
 local entityTable = Spawner.createEntity({
     CustomName = "Deer God", -- Custom name of your entity
     Model = "rbxassetid://11393625763", -- Can be GitHub file or rbxassetid
-    Speed = 16, -- Percentage, 100 = default Rush speed
-    DelayTime = 5, -- Time before starting cycles (seconds)
+    Speed = 90, -- Percentage, 100 = default Rush speed
+    DelayTime = 2, -- Time before starting cycles (seconds)
     HeightOffset = 0,
     CanKill = true,
     KillRange = 1000,
@@ -33,11 +33,11 @@ local entityTable = Spawner.createEntity({
             Shake = true,
             Sound1 = {
                 10483790459, -- SoundId
-                { Volume = 0.5 }, -- Sound properties
+                { Volume = 5 }, -- Sound properties
             },
             Sound2 = {
                 10483837590, -- SoundId
-                { Volume = 0.5 }, -- Sound properties
+                { Volume = 5 }, -- Sound properties
             },
             Flashing = {
                 true, -- Enabled/Disabled
@@ -86,4 +86,4 @@ end
 
 
 -- Run the created entity
-Spawner.runEntity(entityTable)# Deer-god
+Spawner.runEntity(entityTable)

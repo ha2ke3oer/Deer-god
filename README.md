@@ -13,7 +13,7 @@ local entityTable = Spawner.createEntity({
     BreakLights = true,
     FlickerLights = {
         true, -- Enabled/Disabled
-        1, -- Time (seconds)
+        5, -- Time (seconds)
     },
     Cycles = {
         Min = 1,
